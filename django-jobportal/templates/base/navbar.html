@@ -1,0 +1,63 @@
+
+<nav class="navbar navbar-expand-lg navbar-light ftco_navbar ftco-navbar-light" id="ftco-navbar" style="background-color: #15a52d !important;">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'home' %}">Teletalk Job Portal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
+
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="{% url 'candidates' %}" class="nav-link">Canditates</a></li>
+        <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+        <li class="nav-item">
+          <ul class="nav soca nav-link">
+            <li class="open">
+                <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Sign in <span class="b-or">or</span> Create <span class="mh">Account</span></a>
+                <ul class="dropdown-menu stop-propagation" style="">
+                    <li class="login-form-n">
+
+                        <div class="cart-mbdj">
+                            <div class="cart-mbdj-l">
+                                <i class="icon icon-laptop-user"></i>
+                            </div>
+                            <div class="cart-mbdj-r">
+                                <div class="t-txt">Tele Jobs</div>
+                                <div class="des-txt">Sign in or create your Tele Jobs account to manage your profile</div>
+
+                                <div class="btn-wraper">
+                                    <a href="{% url 'candidate-login' %}" class="btn slu-btn">Sign In</a>
+                                    <a href="{% url 'candidate-register' %}" class="ca-btn slu-btn" target="_blank">Create Account</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-emp">
+                            <div class="cart-emp-l">
+                                <i class="icon icon-employer"></i>
+                            </div>
+                            <div class="cart-emp-r">
+                                <div class="t-txt">Employers</div>
+                                <div class="des-txt">Sign in or create account to find the best candidates in the fastest way</div>
+                                <div class="btn-wraper">
+                                    <a href="{% url 'employee-login' %}" class="btn slu-btn">Sign in</a>
+                                    <a href="{% url 'employee-register' %}" class="ca-btn slu-btn" target="_blank">Create Account</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item cta mr-md-1"><a href="{% url 'job-post' %}" class="nav-link">Post a Job</a></li>
+        <li class="nav-item cta cta-colored"><a href="{% url 'job-find' %}" class="nav-link">Want a Job</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
